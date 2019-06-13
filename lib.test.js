@@ -60,3 +60,10 @@ test("use reduce to filter through array", () => {
   const actual = test1.filterReduce(arr);
   expect(actual).toEqual(expected);
 });
+
+test("use reduce to find number < 4 in an array", () => {
+  const arr = [1, 2, 3, 4, 5, 6];
+  const expected = [5];
+  const actual = test1.findReduce(arr);
+  expect(actual).toEqual(expected);
+});
