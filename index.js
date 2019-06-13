@@ -41,6 +41,11 @@ function find(arr) {
 
 //use arr.reduce to sum the total of the array
 
+function reduce(arr) {
+  var x = arr.reduce((a, b) => a + b);
+  return x;
+}
+
 //use arr.reduce to replicate the map, filter and find functionality
 
 //refactor your code so that
@@ -54,5 +59,6 @@ module.exports = {
   eachFor,
   map,
   filter,
-  find
+  find,
+  reduce
 };

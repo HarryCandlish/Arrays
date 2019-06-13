@@ -39,3 +39,10 @@ test("find and return the first number higher than 4", () => {
   const actual = test1.find(arr);
   expect(actual).toEqual(expected);
 });
+
+test("use reduce to sum the total of an array", () => {
+  const arr = [1, 2, 3, 4, 5, 6];
+  const expected = 21;
+  const actual = test1.reduce(arr);
+  expect(actual).toEqual(expected);
+});
