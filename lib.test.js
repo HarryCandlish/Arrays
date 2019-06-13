@@ -25,3 +25,10 @@ test("use map to return each item + 1", function() {
   const actual = test1.map(arr);
   expect(actual).toEqual(expected);
 });
+
+test("use filter to filter out even numbers of an array", function() {
+  const arr = [1, 2, 3, 4, 5, 6];
+  const expected = [2, 4, 6];
+  const actual = test1.filter(arr);
+  expect(actual).toEqual(expected);
+});

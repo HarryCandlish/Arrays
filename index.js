@@ -27,6 +27,11 @@ function map(arr) {
 
 //use arr.filter to return an array with only even numbers
 
+function filter(arr) {
+  var x = arr.filter(n => n % 2 === 0);
+  return x;
+}
+
 //use arr.find to return the first number > 4
 
 //use arr.reduce to sum the total of the array
@@ -42,5 +47,6 @@ function map(arr) {
 module.exports = {
   forLoop,
   eachFor,
-  map
+  map,
+  filter
 };
