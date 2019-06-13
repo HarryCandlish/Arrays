@@ -1,6 +1,12 @@
-var arr = [1,2,3,4,5,6]
+var arr = [1, 2, 3, 4, 5, 6];
 
 //use for loop over the array and console log each item
+
+function forLoop(arr) {
+  x = [];
+  for (let i = 0; i < arr.length; i++) x.push(arr[i]);
+  return x;
+}
 
 //use arr.forEach to do the same thing
 
@@ -19,3 +25,7 @@ var arr = [1,2,3,4,5,6]
 // at least one function is using an inline es6 function with implicit return e.g. arr.map(item => ???)
 // at least one function is using an inline es6 function with an explicit return e.g. arr.map(item => {return ???})
 // at least one is using a named function as an argument arr.map(doSomething)
+
+module.exports = {
+  forLoop
+};
