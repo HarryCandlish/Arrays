@@ -48,6 +48,14 @@ function reduce(arr) {
 
 //use arr.reduce to replicate the map, filter and find functionality
 
+function mapReduce(arr) {
+  var y = [];
+  var x = arr.reduce((acc, n) => {
+    y.push(n + 1);
+  }, 0);
+  return y;
+}
+
 //refactor your code so that
 // at least one function is defined as an anonymous function e.g. arr.map(function keyword function(item) {???})
 // at least one function is using an inline es6 function with implicit return e.g. arr.map(item => ???)
@@ -60,5 +68,6 @@ module.exports = {
   map,
   filter,
   find,
-  reduce
+  reduce,
+  mapReduce
 };

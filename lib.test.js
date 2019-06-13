@@ -46,3 +46,10 @@ test("use reduce to sum the total of an array", () => {
   const actual = test1.reduce(arr);
   expect(actual).toEqual(expected);
 });
+
+test("use reduce to map through array", () => {
+  const arr = [1, 2, 3, 4, 5, 6];
+  const expected = [2, 3, 4, 5, 6, 7];
+  const actual = test1.mapReduce(arr);
+  expect(actual).toEqual(expected);
+});
