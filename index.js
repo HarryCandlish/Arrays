@@ -10,6 +10,14 @@ function forLoop(arr) {
 
 //use arr.forEach to do the same thing
 
+function eachFor(arr) {
+  x = [];
+  arr.forEach(n => {
+    x.push(n);
+  });
+  return x;
+}
+
 //use arr.map to return an array where each item has had 1 added to it
 
 //use arr.filter to return an array with only even numbers
@@ -27,5 +35,6 @@ function forLoop(arr) {
 // at least one is using a named function as an argument arr.map(doSomething)
 
 module.exports = {
-  forLoop
+  forLoop,
+  eachFor
 };

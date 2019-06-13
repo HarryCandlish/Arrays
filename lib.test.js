@@ -11,3 +11,10 @@ test("loop over the array", function() {
   const actual = test1.forLoop(arr);
   expect(actual).toEqual(expected);
 });
+
+test("forEach to display content of an array", function() {
+  const arr = [1, 2, 3, 4, 5, 6];
+  const expected = [1, 2, 3, 4, 5, 6];
+  const actual = test1.eachFor(arr);
+  expect(actual).toEqual(expected);
+});

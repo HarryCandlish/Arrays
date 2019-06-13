@@ -3,7 +3,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "test": "jest"
+    "test": "jest --watch --noStackTrace"
   },
   "dependencies": {
     "jest": "^23.6.0"
