@@ -56,6 +56,14 @@ function mapReduce(arr) {
   return y;
 }
 
+function filterReduce(arr) {
+  var x = [];
+  var y = arr.reduce((acc, n) => {
+    if (n % 2 === 0) x.push(n);
+  }, 0);
+  return x;
+}
+
 //refactor your code so that
 // at least one function is defined as an anonymous function e.g. arr.map(function keyword function(item) {???})
 // at least one function is using an inline es6 function with implicit return e.g. arr.map(item => ???)
@@ -69,5 +77,6 @@ module.exports = {
   filter,
   find,
   reduce,
-  mapReduce
+  mapReduce,
+  filterReduce
 };
