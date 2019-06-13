@@ -32,3 +32,10 @@ test("use filter to filter out even numbers of an array", function() {
   const actual = test1.filter(arr);
   expect(actual).toEqual(expected);
 });
+
+test("find and return the first number higher than 4", () => {
+  const arr = [1, 2, 3, 4, 5, 6];
+  const expected = 5;
+  const actual = test1.find(arr);
+  expect(actual).toEqual(expected);
+});

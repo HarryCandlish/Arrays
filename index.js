@@ -34,6 +34,11 @@ function filter(arr) {
 
 //use arr.find to return the first number > 4
 
+function find(arr) {
+  var x = arr.find(n => n > 4);
+  return x;
+}
+
 //use arr.reduce to sum the total of the array
 
 //use arr.reduce to replicate the map, filter and find functionality
@@ -48,5 +53,6 @@ module.exports = {
   forLoop,
   eachFor,
   map,
-  filter
+  filter,
+  find
 };
