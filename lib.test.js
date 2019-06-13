@@ -18,3 +18,10 @@ test("forEach to display content of an array", function() {
   const actual = test1.eachFor(arr);
   expect(actual).toEqual(expected);
 });
+
+test("use map to return each item + 1", function() {
+  const arr = [1, 2, 3, 4, 5, 6];
+  const expected = [2, 3, 4, 5, 6, 7];
+  const actual = test1.map(arr);
+  expect(actual).toEqual(expected);
+});

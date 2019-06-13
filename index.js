@@ -20,6 +20,11 @@ function eachFor(arr) {
 
 //use arr.map to return an array where each item has had 1 added to it
 
+function map(arr) {
+  var x = arr.map(n => n + 1);
+  return x;
+}
+
 //use arr.filter to return an array with only even numbers
 
 //use arr.find to return the first number > 4
@@ -36,5 +41,6 @@ function eachFor(arr) {
 
 module.exports = {
   forLoop,
-  eachFor
+  eachFor,
+  map
 };
